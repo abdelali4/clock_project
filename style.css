@@ -1,0 +1,78 @@
+body{
+    margin: 0;
+    min-height:100vh;
+    background-image:url("background.svg");
+    background-position:center;
+    background-size:cover;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+}
+:root{
+    --stroke-size:400px;
+}
+*{
+    box-sizing:border-box;
+}
+#stroke{
+    width: var(--stroke-size);
+    height:var(--stroke-size);
+    border-radius: 50%;
+    border: 10px solid white;
+    position:relative;
+    display: flex;
+    justify-content: center;
+}
+.number{
+    color: white;
+    font-size: 50px;
+    position:absolute;
+    width: 100%;
+    height:100%;
+    display: flex;
+    justify-content: center;
+}
+.span{
+    position: absolute;
+}
+#seconds{
+    width: 2px;
+    height: calc((var(--stroke-size)/2)*0.6);
+    background-color: red;
+    position: absolute;
+    margin:5px;
+    transform-origin:top center;
+    z-index: -1;
+    top: 0;
+}
+#minutes{
+    width: 5px;
+    height: calc((var(--stroke-size)/2)*0.5);
+    background-color: white;
+    position: absolute;
+    margin:5px;
+    top: 0;
+    transform-origin:top center;
+    z-index: -1;
+}
+#hours{
+    width: 5px;
+    height: calc((var(--stroke-size)/2)*0.3);
+    background-color: white;
+    position: absolute;
+    top: 0;
+    margin:5px;
+    transform-origin:top center;
+    z-index: -1;
+
+}
+#center{
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    align-self: center;
+    background-color: white;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
